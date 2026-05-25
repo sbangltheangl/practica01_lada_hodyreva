@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repair Service</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Сервис ремонта техники</h1>
+
+        <div class="slider">
+            <img src="https://picsum.photos/600/300?1" class="slide active">
+            <img src="https://picsum.photos/600/300?2" class="slide">
+            <img src="https://picsum.photos/600/300?3" class="slide">
+            <img src="https://picsum.photos/600/300?4" class="slide">
+        </div>
+
+        <div class="card">
+            <h2>Регистрация</h2>
+            <form action="register.php" method="POST">
+                <input type="text" name="full_name" placeholder="ФИО" required>
+                <input type="text" name="login" placeholder="Логин" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="phone" placeholder="Телефон" required>
+                <input type="password" name="password" placeholder="Пароль" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>Авторизация</h2>
+            <form action="login.php" method="POST">
+                <input type="text" name="login" placeholder="Логин" required>
+                <input type="password" name="password" placeholder="Пароль" required>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/slider.js"></script>
+</body>
+</html>
